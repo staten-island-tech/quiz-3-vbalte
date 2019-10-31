@@ -1,4 +1,4 @@
-//RaphBill = [140, 45, 270];
+/* //RaphBill = [140, 45, 270];
 
 // const map1 = RaphBill.map(x => x * 0.20); //20 percent when les than 50
 
@@ -21,7 +21,7 @@ let Tips = [0.15,0.2,0.10]; */
 
 /////QUIZ THREE 
 
-function printArray(someArray, message) {
+/* function printArray(someArray, message) {
     console.log(`${someArray} ${message}`);
 }
 //array for bills
@@ -57,9 +57,44 @@ printArray(billTotal, `this array shows the total bill with tip`);
 
 //over 100
 var copyArray = billTotal.filter(value => value >= 100);
-printArray(copyArray, `this array shows the total bill value over $100`); 
+printArray(copyArray, `this array shows the total bill value over $100`);  */ 
 
 
+const Dejon = {
+ fullName : `Dejon kurti`,
+ mass : 110,
+ height : 1.95,
+ getBMI : function() {
+    return this.mass / (this.height * this.height);
+}
+}
+
+const Rob = {
+    fullName : `Robert Grande`,
+    mass : 78,
+    height : 1.69,
+    getBMI : function() {
+        return this.mass / (this.height * this.height);
+    }
+}
+
+
+
+/* getBMIRob : function(Rob) {
+    return this.mass / (this.mass * this.mass);
+} */
+
+
+console.log(Rob.getBMI()); 
+console.log(Dejon.getBMI()); 
+
+if (Rob.getBMI() > Dejon.getBMI()) {
+    console.log(Rob.fullName + `has the greater BMI of` + Rob.getBMI );
+} else if (Dejon.getBMI() > Rob.getBMI()) {
+    console.log(Dejon.fullName + `has the greater BMI` + Dejon.getBMI); 
+} else {
+    console.log(`They have the same BMI`)
+}
 
 
 
