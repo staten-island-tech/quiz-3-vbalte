@@ -93,8 +93,9 @@ if (Rob.getBMI() > Dejon.getBMI()) {
 } else if (Dejon.getBMI() > Rob.getBMI()) {
     console.log(Dejon.fullName + `has the greater BMI` + Dejon.getBMI); 
 } else {
-    console.log(`They have the same BMI`)
+    console.log(`They have the same BMI`);
 }
+
 
 
 
