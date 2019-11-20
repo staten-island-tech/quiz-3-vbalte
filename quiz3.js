@@ -48,7 +48,7 @@ function tipCalculator(bill) {
 const billTip = bill.map(val => tipCalculator(val));
 printArray(billTip, `this array shows the tip`); 
 
-//bill total
+//bill total, functional programming 
 const billTotal = bill.map(val => {
     const index = bill.indexOf(val);
     return val + billTip[index]; 
